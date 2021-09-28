@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data science | Yurchenko S.</title>
+    <link>https://V1K1NG31.github.io/tag/data-science/</link>
+      <atom:link href="https://V1K1NG31.github.io/tag/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data science</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://V1K1NG31.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Data science</title>
+      <link>https://V1K1NG31.github.io/tag/data-science/</link>
+    </image>
+    
+    <item>
+      <title>Article about data science</title>
+      <link>https://V1K1NG31.github.io/project/project_1/</link>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://V1K1NG31.github.io/project/project_1/</guid>
+      <description>&lt;h3 id=&#34;what-is-data-science&#34;&gt;What is Data Science?&lt;/h3&gt;
+&lt;p&gt;Data science is the field of study that combines domain expertise, programming skills, and knowledge of mathematics and statistics to extract meaningful insights from data. Data science practitioners apply machine learning algorithms to numbers, text, images, video, audio, and more to produce artificial intelligence (AI) systems to perform tasks that ordinarily require human intelligence. In turn, these systems generate insights which analysts and business users can translate into tangible business value.&lt;/p&gt;
+&lt;h3 id=&#34;why-data-science-is-important&#34;&gt;Why Data Science is Important?&lt;/h3&gt;
+&lt;p&gt;More and more companies are coming to realize the importance of data science, AI, and machine learning. Regardless of industry or size, organizations that wish to remain competitive in the age of big data need to efficiently develop and implement data science capabilities or risk being left behind.&lt;/p&gt;
+&lt;h3 id=&#34;data-science--datarobot&#34;&gt;Data Science + DataRobot&lt;/h3&gt;
+&lt;p&gt;Ramping up data science efforts is difficult even for companies with near-unlimited resources. The DataRobot AI Cloud Platform democratizes data science and AI, enabling analysts, business users, and other technical professionals to become Citizen Data Scientists and AI Engineers, in addition to making data scientists more productive. It automates repetitive modeling tasks that once occupied the vast majority of data scientists’ time and brainpower. DataRobot bridges the gap between data scientists and the rest of the organization, making enterprise machine learning more accessible than ever.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
