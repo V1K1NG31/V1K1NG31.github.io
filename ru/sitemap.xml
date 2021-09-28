@@ -80,19 +80,6 @@
                 href="https://V1K1NG31.github.io/ru/tag/data-science/"
                 />
   </url><url>
-    <loc>https://V1K1NG31.github.io/ru/category/fun/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://V1K1NG31.github.io/category/fun/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://V1K1NG31.github.io/ru/category/fun/"
-                />
-  </url><url>
     <loc>https://V1K1NG31.github.io/ru/post/secondary-post/</loc>
     <lastmod>2021-09-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -117,32 +104,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://V1K1NG31.github.io/ru/tag/morning/"
-                />
-  </url><url>
-    <loc>https://V1K1NG31.github.io/ru/category/post/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://V1K1NG31.github.io/category/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://V1K1NG31.github.io/ru/category/post/"
-                />
-  </url><url>
-    <loc>https://V1K1NG31.github.io/ru/post/</loc>
-    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://V1K1NG31.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://V1K1NG31.github.io/ru/post/"
                 />
   </url><url>
     <loc>https://V1K1NG31.github.io/ru/project/</loc>
@@ -195,6 +156,25 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://V1K1NG31.github.io/ru/tags/"
+                />
+  </url><url>
+    <loc>https://V1K1NG31.github.io/ru/category/%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D1%8C%D0%B5/</loc>
+    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://V1K1NG31.github.io/ru/category/%D0%BF%D0%BE%D1%81%D1%82/</loc>
+    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://V1K1NG31.github.io/ru/post/</loc>
+    <lastmod>2021-09-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://V1K1NG31.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://V1K1NG31.github.io/ru/post/"
                 />
   </url><url>
     <loc>https://V1K1NG31.github.io/ru/tag/academic/</loc>
@@ -327,19 +307,6 @@
                 href="https://V1K1NG31.github.io/ru/publication-type/1/"
                 />
   </url><url>
-    <loc>https://V1K1NG31.github.io/ru/publication/example/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://V1K1NG31.github.io/publication/example/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://V1K1NG31.github.io/ru/publication/example/"
-                />
-  </url><url>
     <loc>https://V1K1NG31.github.io/ru/publication_types/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -364,6 +331,19 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://V1K1NG31.github.io/ru/publication/"
+                />
+  </url><url>
+    <loc>https://V1K1NG31.github.io/ru/publication/example/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://V1K1NG31.github.io/publication/example/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://V1K1NG31.github.io/ru/publication/example/"
                 />
   </url><url>
     <loc>https://V1K1NG31.github.io/ru/admin/</loc>
