@@ -1,17 +1,23 @@
-import { resumeData } from '../data/resumeData'
+import { useI18n } from '../i18n/useI18n'
 import { Section } from './Section'
 
-function formatPeriod(start: string, end: string | 'present') {
-  const e = end === 'present' ? 'настоящее время' : end
-  return `${start} — ${e}`
-}
-
 export function Experience() {
+  const { bundle } = useI18n()
+  const { ui, profile } = bundle
+
+  function formatPeriod(start: string, end: string | 'present') {
+    const e = end === 'present' ? ui.periodPresent : end
+    return `${start} — ${e}`
+  }
+
   return (
-    <Section id="experience" title="Опыт">
+    <Section id="experience" title={ui.sections.experience}>
       <ul className="timeline">
-        {resumeData.experience.map((job) => (
-          <li key={job.company + job.role} className="timeline__item">
+        {profile.experience.map((job) => (
+          <li
+            key={`${job.role}-${job.company}-${job.start}`}
+            className="timeline__item"
+          >
             <div className="timeline__header">
               <h3 className="timeline__role">{job.role}</h3>
               <p className="timeline__company">{job.company}</p>

@@ -1,4 +1,4 @@
-import { resumeData } from '../data/resumeData'
+import { useI18n } from '../i18n/useI18n'
 import { Section } from './Section'
 
 function contactIcon(kind: string) {
@@ -17,13 +17,16 @@ function contactIcon(kind: string) {
 }
 
 export function Contacts() {
+  const { bundle } = useI18n()
+  const { ui, profile } = bundle
+
   return (
-    <Section id="contacts" title="Контакты">
-      <p className="prose">
-        Укажите реальные контакты в файле <code>src/data/resumeData.ts</code>.
-      </p>
+    <Section id="contacts" title={ui.sections.contacts}>
+      {ui.contactsIntro ? (
+        <p className="prose">{ui.contactsIntro}</p>
+      ) : null}
       <ul className="contact-list">
-        {resumeData.contacts.map((c) => (
+        {profile.contacts.map((c) => (
           <li key={c.href}>
             <a className="contact-link" href={c.href}>
               <span className="contact-link__icon" aria-hidden>

@@ -3,13 +3,11 @@
 
 name: Deploy resume to GitHub Pages
 
+# Без фильтра paths: любой пуш в default branch пересобирает сайт (иначе коммиты
+# только в README/корне не запускали workflow — «пушнул и ничего не случилось»).
 on:
   push:
     branches: [master, main]
-    paths:
-      - 'resume/**'
-      - 'legacy/**'
-      - '.github/workflows/deploy-resume.yml'
   workflow_dispatch:
 
 permissions:

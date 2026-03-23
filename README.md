@@ -34,14 +34,14 @@ npm run build
 
 Файл [`.github/workflows/deploy-resume.yml`](.github/workflows/deploy-resume.yml):
 
-1. Запускается при изменениях в **`resume/`**, **`legacy/`** или в самом workflow (и вручную через **Actions → Run workflow**).
+1. Запускается при **любом** пуше в **`master`** / **`main`** (и вручную: **Actions → Deploy resume to GitHub Pages → Run workflow**). Раньше стоял фильтр по путям — из‑за него коммиты без правок в `resume/`/`legacy/` не запускали сборку.
 2. `npm ci`, `lint`, `build` в `resume/` → артефакт из **`resume/dist/`**.
 3. Если в репозитории есть **`legacy/`**, оно **синхронизируется** в `resume/dist/legacy/` (чтобы работали ссылки вида `/legacy/…`).
 4. **`actions/upload-pages-artifact`** + **`actions/deploy-pages`** публикуют сайт через API Pages.
 
 Собранные `index.html` / `assets` **в корень ветки не коммитятся** — источник правды для опубликованного сайта только артефакт последнего успешного деплоя.
 
-Тексты резюме: [`resume/src/data/resumeData.ts`](resume/src/data/resumeData.ts).
+Тексты резюме (двуязычие **EN/RU**): [`resume/src/i18n/locales/en.ts`](resume/src/i18n/locales/en.ts), [`resume/src/i18n/locales/ru.ts`](resume/src/i18n/locales/ru.ts).
 
 ### Локальный предпросмотр «как на Pages»
 

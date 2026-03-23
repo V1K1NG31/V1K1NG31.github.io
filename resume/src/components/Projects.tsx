@@ -1,11 +1,14 @@
-import { resumeData } from '../data/resumeData'
+import { useI18n } from '../i18n/useI18n'
 import { Section } from './Section'
 
 export function Projects() {
+  const { bundle } = useI18n()
+  const { ui, profile } = bundle
+
   return (
-    <Section id="projects" title="Проекты">
+    <Section id="projects" title={ui.sections.projects}>
       <ul className="card-list">
-        {resumeData.projects.map((p) => (
+        {profile.projects.map((p) => (
           <li key={p.title} className="card">
             <div className="card__head">
               <h3 className="card__title">
