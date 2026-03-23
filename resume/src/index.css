@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --theme-transition-duration: 0.28s;
+  --theme-transition-easing: ease-out;
+}
+
 html {
   scroll-behavior: smooth;
+  /* Sticky nav + anchor offset */
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -13,10 +20,15 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   font-size: 1.0625rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--color-text);
   background-color: var(--color-bg);
+  transition:
+    background-color var(--theme-transition-duration)
+      var(--theme-transition-easing),
+    color var(--theme-transition-duration) var(--theme-transition-easing);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 #root {

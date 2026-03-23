@@ -24,7 +24,7 @@ export type ExperienceItem = {
 
 export type ProjectItem = {
   title: string
-  /** Краткий вводный абзац; можно опустить, если заданы bullets */
+  /** Short intro paragraph; omit if bullets are enough */
   description?: string
   bullets?: string[]
   stack: string[]
@@ -81,6 +81,7 @@ export type ResumeUiStrings = {
   langRu: string
   langSwitchToEn: string
   langSwitchToRu: string
+  langGroupAria: string
   themeLight: string
   themeDark: string
   themeAriaLight: string

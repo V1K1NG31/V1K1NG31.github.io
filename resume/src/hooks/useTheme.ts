@@ -23,7 +23,8 @@ function readInitialTheme(): Theme {
 }
 
 /**
- * Тема оформления: сохраняется в localStorage, иначе следует prefers-color-scheme.
+ * Theme: persisted in localStorage when toggled; otherwise follows
+ * prefers-color-scheme until the user chooses a theme.
  */
 export function useTheme(): { theme: Theme; toggleTheme: () => void } {
   const [theme, setTheme] = useState<Theme>(() => readInitialTheme())

@@ -42,6 +42,7 @@ export const ru: ResumeBundle = {
     langRu: 'RU',
     langSwitchToEn: 'Переключить на английский',
     langSwitchToRu: 'Переключить на русский',
+    langGroupAria: 'Язык',
     themeLight: 'Светлая',
     themeDark: 'Тёмная',
     themeAriaLight: 'Включить светлую тему',

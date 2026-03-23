@@ -7,7 +7,7 @@ export function LanguageSwitcher() {
     <div
       className="lang-switcher"
       role="group"
-      aria-label={bundle.locale === 'en' ? 'Language' : 'Язык'}
+      aria-label={bundle.ui.langGroupAria}
     >
       {(['en', 'ru'] as const).map((code) => (
         <button
