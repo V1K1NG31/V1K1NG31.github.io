@@ -1,0 +1,69 @@
+# Деплой на GitHub Pages через официальный API (Settings → Pages → Source: GitHub Actions).
+# Артефакт = resume/dist + каталог legacy/ (копируется в dist/legacy для URL /legacy/).
+
+name: Deploy resume to GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'resume/**'
+      - 'legacy/**'
+      - '.github/workflows/deploy-resume.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: resume/package-lock.json
+
+      - name: Install, lint, build
+        working-directory: resume
+        run: |
+          npm ci
+          npm run lint
+          npm run build
+
+      - name: Attach legacy/ to site root (for /legacy/…)
+        run: |
+          if [ -d legacy ]; then
+            mkdir -p resume/dist/legacy
+            rsync -a --delete legacy/ resume/dist/legacy/
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: resume/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
