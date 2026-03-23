@@ -3,10 +3,10 @@ import type { ResumeBundle } from '../types'
 export const en: ResumeBundle = {
   locale: 'en',
   meta: {
-    title: 'Sergei Iurchenko — CV',
+    title: 'Backend developer · CV',
     description:
-      'Python backend developer / Dev team lead. FastAPI, Django, PostgreSQL, ' +
-      'Docker, CI/CD. Remote, part-time, project-based.',
+      'Python backend developer and team lead. Product development, integrations, ' +
+      'DevOps. FastAPI, Django, PostgreSQL, Docker, GitLab CI.',
     htmlLang: 'en',
   },
   ui: {
@@ -51,15 +51,17 @@ export const en: ResumeBundle = {
     name: 'Sergei Iurchenko',
     headline: 'Python Backend Developer / Dev Team Lead',
     tagline:
-      'Python backend developer with 3+ years of hands-on experience building ' +
-      'and maintaining production APIs, backend services, and integrations.',
+      'Python backend developer and team lead with 3+ years in product ' +
+      'development, integrations, and DevOps.',
     location: 'Belgrade, Serbia (UTC+1)',
-    openTo: 'Remote, long-term part-time, project-based contracts',
+    openTo: 'Remote / hybrid, long-term projects, part-time',
     about: [
-      'Strong in Python, FastAPI, Django, PostgreSQL, Docker, CI/CD, Redis, ' +
-        'RabbitMQ, Celery, and Linux, with a solid DevOps mindset.',
-      'Used to owning features end-to-end: from clarifying requirements and ' +
-        'designing the solution to deployment and support.',
+      'Python backend developer and team lead with 3+ years of experience in ' +
+        'product development, integrations, and DevOps.',
+      'Grew from support and integration engineering to leading a backend team, ' +
+        'combining hands-on coding with architecture and process ownership.',
+      'Quick to understand existing systems, integrate complex third-party ' +
+        'APIs, and keep production services stable.',
     ],
     contacts: [
       {
@@ -81,62 +83,86 @@ export const en: ResumeBundle = {
     experience: [
       {
         company: 'Product company (NDA)',
-        role: 'Dev Team Lead (Backend)',
-        location: 'Belgrade (remote)',
-        start: '2024',
+        role: 'Dev Team Lead / Lead Backend Engineer',
+        location: 'Belgrade, hybrid/remote',
+        start: 'Feb 2025',
         end: 'present',
         bullets: [
-          'Lead a small backend-focused team: planning, breakdown, estimates, ' +
-            'code reviews, mentoring.',
-          'Design architecture for new services and integrations with a focus ' +
-            'on reliability and maintainability.',
-          'Own CI/CD and basic DevOps: Dockerized services, GitLab CI pipelines, ' +
-            'Nginx/Caddy setup, release flow.',
-          'Work with non-technical stakeholders: clarify requirements and ' +
-            'align technical decisions with business goals.',
+          'Lead a backend-focused team: planning, task breakdown, estimations, ' +
+            'mentoring, code reviews.',
+          'Design architecture for backend services and integrations; define ' +
+            'technical standards (code style, testing, CI/CD).',
+          'Own release flow and basic DevOps: Docker-based deployments, GitLab CI ' +
+            'pipelines, Nginx/Caddy configuration, basic monitoring and alerting.',
+          'Work with product and business stakeholders: feature prioritization, ' +
+            'sprint planning, balancing tech debt vs. new work, protecting the ' +
+            "team's focus.",
         ],
       },
       {
         company: 'Product company (NDA)',
-        role: 'Python Backend Developer',
-        location: 'Belgrade (remote)',
-        start: '2023',
-        end: 'present',
+        role: 'Software Engineer / Head of Integrations',
+        location: 'Remote',
+        start: 'Jun 2023',
+        end: 'Jan 2025',
         bullets: [
-          'Build and maintain backend services and REST APIs (FastAPI, Django).',
-          'Integrate third-party REST APIs: auth, pagination, rate limits, ' +
-            'webhooks, error handling.',
-          'Design and optimize data models and queries in PostgreSQL/MySQL; ' +
-            'Redis, RabbitMQ, Celery for async workloads.',
-          'Automated tests (pytest), code reviews, incremental refactors.',
+          'Developed backend services and REST APIs in Python (FastAPI, Django).',
+          'Implemented integrations with third-party services (auth, billing, ' +
+            'notifications, webhooks).',
+          'Led integration projects: planning, partner communication, API/protocol ' +
+            'analysis, change coordination.',
+          'Prioritized the integrations backlog and coordinated with support and ' +
+            'sales so integrations solved real business problems.',
+          'Set up infrastructure: Docker environments, GitLab CI/CD pipelines, ' +
+            'basic service orchestration, Nginx/Caddy configuration.',
+          'Combined development and integration leadership: partner communication ' +
+            'during the day, hands-on coding when needed.',
+        ],
+      },
+      {
+        company: 'Product company (NDA)',
+        role: 'L2 Support / Integration Engineer (PSP Allocation, internal)',
+        location: 'Remote',
+        start: 'Mar 2023',
+        end: 'May 2023',
+        bullets: [
+          'Second-line incidents, critical cases, escalation to engineering.',
+          'Owned operational metrics for the region and coordinated between tech ' +
+            'and business without a formal «country manager» title.',
+          'Launched first integrations: partner communication, basic process ' +
+            'setup, requirements for future development.',
         ],
       },
       {
         company: 'Kodland',
         role: 'Data Analyst',
         location: 'Remote',
-        start: '2021',
-        end: '2022',
+        start: 'May 2021',
+        end: 'Jul 2022',
         bullets: [
-          'Payroll and sales performance reporting for teams and individual reps.',
-          'KPI analysis from quality control and operations; bottlenecks and ' +
-            'optimization opportunities.',
-          'SQL against the data warehouse; dashboards in Amazon QuickSight / ' +
-            'Power BI.',
-          'Documentation, procedures, and meetings to improve business processes.',
+          'Payroll and sales performance reports for teams and individual reps.',
+          'KPIs from quality control and operational data; trends and process ' +
+            'improvements.',
+          'SQL for the data warehouse; dashboards in Power BI / Amazon QuickSight.',
+          'Reporting automation in Google Sheets/Excel; documentation and ' +
+            'working procedures.',
         ],
       },
     ],
     skills: [
       {
+        title: 'Languages',
+        items: ['Python', 'Go (comfortable in existing projects)', 'SQL'],
+      },
+      {
         title: 'Backend',
         items: [
-          'Python',
           'FastAPI',
           'Django',
-          'Django REST Framework',
-          'REST API design',
-          'OOP, clean code',
+          'aiogram (Telegram bots)',
+          'REST APIs',
+          'Webhooks',
+          'Background jobs',
         ],
       },
       {
@@ -144,52 +170,74 @@ export const en: ResumeBundle = {
         items: ['PostgreSQL', 'MySQL', 'Redis'],
       },
       {
-        title: 'Messaging & async',
+        title: 'Messaging / async',
         items: ['RabbitMQ', 'Celery'],
       },
       {
-        title: 'DevOps & infrastructure',
+        title: 'DevOps / infra',
         items: [
           'Docker',
-          'Docker Compose',
-          'GitLab CI',
+          'Docker Compose / Podman',
+          'GitLab CI/CD',
+          'Linux',
+          'systemd',
           'Nginx',
           'Caddy',
-          'Linux',
-          'Bash',
-          'Monitoring & logging',
-          'Reverse proxy & SSL',
         ],
       },
       {
-        title: 'Other',
+        title: 'Analytics / BI (previous role)',
         items: [
-          'Go (join existing codebases)',
           'SQL',
-          'Data analysis',
-          'Power BI',
-          'Amazon QuickSight',
           'Google Sheets',
           'Excel',
+          'Power BI',
+          'Amazon QuickSight',
+          'KPI / sales analytics',
+        ],
+      },
+      {
+        title: 'Architecture / practices',
+        items: [
+          'REST API design',
+          'Microservices',
+          'Clean code',
+          'DRY / SOLID',
+          'Code review',
+          'CI/CD',
+          'Monitoring and stability of integrations',
         ],
       },
     ],
     projects: [
       {
-        title: 'REST APIs & integrations',
-        description:
-          'Production-ready REST APIs for internal and external consumers; ' +
-          'integrations with payments, CRMs, and other SaaS (retries, logging, ' +
-          'error handling). Docker-based deployments on VPS/cloud.',
-        stack: ['Python', 'FastAPI', 'Docker'],
+        title: 'Internal API platform',
+        bullets: [
+          'Designed and implemented a set of REST APIs for internal services: ' +
+            'auth, quotas, logging, error handling.',
+          'Consistent patterns for new services and integrations; easier ' +
+            'onboarding for developers.',
+        ],
+        stack: ['Python', 'FastAPI', 'REST'],
       },
       {
-        title: 'Automation & Telegram bots',
-        description:
-          'Telegram bots for business workflows (notifications, lightweight ' +
-          'dashboards, internal tools). Python scripts across APIs, databases, ' +
-          'and Google Sheets; self-hosted orchestration (e.g. n8n).',
-        stack: ['Python', 'Telegram', 'n8n'],
+        title: 'Third-party integrations',
+        bullets: [
+          'Multiple integrations with external APIs (payments, partner ' +
+            'platforms, notifications).',
+          'Rate limits, retries, idempotency, and monitoring for reliable ' +
+            'production behavior.',
+        ],
+        stack: ['Python', 'REST', 'Webhooks'],
+      },
+      {
+        title: 'Analytics & KPI tooling (Kodland)',
+        bullets: [
+          'Reporting for sales and KPIs based on SQL and BI (QuickSight / ' +
+            'Power BI).',
+          'Clear performance view for management across teams and individuals.',
+        ],
+        stack: ['SQL', 'Power BI', 'QuickSight'],
       },
       {
         title: 'This CV site',
@@ -204,15 +252,14 @@ export const en: ResumeBundle = {
         institution:
           "RUDN University (Peoples' Friendship University of Russia)",
         degree:
-          'Faculty of Information Technologies — 4 years completed, ' +
-          'degree not awarded',
+          'Faculty of Information Technologies — 4 years completed, degree not ' +
+          "finished (incomplete bachelor's)",
         period: '2019 — 2023',
       },
     ],
     languages: [
       { name: 'Russian', level: 'Native' },
-      { name: 'English', level: 'Professional working proficiency' },
-      { name: 'Serbian', level: 'Living in Serbia — conversational' },
+      { name: 'English', level: 'B2, working proficiency' },
     ],
   },
 }

@@ -21,14 +21,25 @@ export function Projects() {
                 )}
               </h3>
             </div>
-            <p className="card__desc">{p.description}</p>
-            <ul className="chip-list chip-list--compact">
-              {p.stack.map((s) => (
-                <li key={s} className="chip chip--muted">
-                  {s}
-                </li>
-              ))}
-            </ul>
+            {p.description ? (
+              <p className="card__desc">{p.description}</p>
+            ) : null}
+            {p.bullets && p.bullets.length > 0 ? (
+              <ul className="bullet-list card__bullets">
+                {p.bullets.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+            ) : null}
+            {p.stack.length > 0 ? (
+              <ul className="chip-list chip-list--compact">
+                {p.stack.map((s) => (
+                  <li key={s} className="chip chip--muted">
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </li>
         ))}
       </ul>

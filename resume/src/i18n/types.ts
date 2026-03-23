@@ -24,7 +24,9 @@ export type ExperienceItem = {
 
 export type ProjectItem = {
   title: string
-  description: string
+  /** Краткий вводный абзац; можно опустить, если заданы bullets */
+  description?: string
+  bullets?: string[]
   stack: string[]
   href?: string
 }

@@ -15,7 +15,7 @@ export function Experience() {
       <ul className="timeline">
         {profile.experience.map((job) => (
           <li
-            key={`${job.role}-${job.company}-${job.start}`}
+            key={`${job.company}-${job.role}-${job.start}-${job.end}`}
             className="timeline__item"
           >
             <div className="timeline__header">
